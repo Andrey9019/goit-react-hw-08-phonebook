@@ -3,8 +3,8 @@ import { List } from './PhoneList.style';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useEffect } from 'react';
-import { fetchContacts } from 'redux/operations';
-import { selectFilteredContacts } from 'redux/selectors';
+import { fetchContacts } from 'redux/contacts/operations';
+import { selectFilteredContacts } from 'redux/contacts/selectors';
 
 
 export const PhoneList = () => {

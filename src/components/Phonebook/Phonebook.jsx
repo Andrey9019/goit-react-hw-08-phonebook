@@ -4,8 +4,8 @@ import { ButtonForm, FormContainer,PhoneForm,StyledField ,FormErrorMes} from './
 import { Label } from 'components/Filter/Filter.style';
 import { useDispatch, useSelector } from 'react-redux';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { selectContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
 
  const phonebookSchema = Yup.object().shape({

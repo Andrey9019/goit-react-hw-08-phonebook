@@ -2,8 +2,8 @@ import React from 'react';
 import { FormInput, Label } from "./Filter.style"
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectFilter } from 'redux/selectors';
-import { setFilter } from 'redux/filtersSlice';
+import { selectFilter } from 'redux/contacts/selectors';
+import { setFilter } from 'redux/contacts/filtersSlice';
 
 
 export const Filter = () => {
