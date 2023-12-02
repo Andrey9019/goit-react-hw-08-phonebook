@@ -20,12 +20,12 @@ export const PhoneList = () => {
 
   return (
     <List>
-      {filterContacts.map(({ name, phone,  id }) => (
+      {filterContacts.map(({ name, number,  id }) => (
         <PhoneListItem
            key={id}
           id={id}
           name={name}
-          phone={phone}
+          number={number}
         />
         ))}
     </List>

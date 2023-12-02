@@ -13,7 +13,7 @@ import { addContact } from 'redux/contacts/operations';
      .min(2, 'Too Short!')
      .max(50, 'Too Long!')
      .required('Name is required'),
-     phone: Yup.string()
+     number: Yup.string()
        .matches(
   '[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}',
          'Enter valid symbols format xxx-xxx-xx-xx'
@@ -37,7 +37,7 @@ export const Phonebook = () => {
         <Formik
           initialValues={{
             name: '',
-            phone: '',
+            number: '',
           }}
 
           validationSchema={phonebookSchema}
@@ -52,8 +52,8 @@ export const Phonebook = () => {
             </Label>
                 
             <Label >Phone Number
-              <StyledField type="tel" name="phone" />
-              <FormErrorMes component="p" name="phone" />
+              <StyledField type="tel" name="number" />
+              <FormErrorMes component="p" name="number" />
             </Label>
         
             <ButtonForm type="submit">Add Contact</ButtonForm>

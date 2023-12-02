@@ -3,7 +3,7 @@ import { ButtonItem, ListItem } from "./PhoneListItem.style"
 import { deleteContact } from "redux/contacts/operations"
 
 
-export const PhoneListItem = ({ id, name, phone}) =>
+export const PhoneListItem = ({ id, name, number}) =>
 {
 const dispatch = useDispatch()
   const handleRemove = () => {
@@ -12,7 +12,7 @@ dispatch(deleteContact(id))
 
     return (
       <ListItem key={id} >
-        {name}: {phone}
+        {name}: {number}
         <ButtonItem
           onClick={handleRemove}>
           Remove
