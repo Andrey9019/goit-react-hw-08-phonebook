@@ -18,7 +18,8 @@ export const App = () => {
     useEffect(() =>{dispatch(fetchContacts())},[dispatch])
 
 
-  return (isRefreshing ? (<b>Refreshing user...</b>) : (<Routes>
+  return (isRefreshing ? (<b>Refreshing user...</b>) : (
+    <Routes>
     <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route
